@@ -3,8 +3,8 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/10.5.0/firebase
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  apiKey: "km_bl1qeuab3oi2fc1stplvp5jt5jpvfypn",
+  authDomain: "Futurecapsule.firebaseapp.com",
   projectId: "YOUR_PROJECT_ID",
   storageBucket: "YOUR_PROJECT.appspot.com",
   messagingSenderId: "YOUR_SENDER_ID",
@@ -14,3 +14,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+
