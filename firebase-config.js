@@ -5,7 +5,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth
 const firebaseConfig = {
   apiKey: "km_bl1qeuab3oi2fc1stplvp5jt5jpvfypn",
   authDomain: "Futurecapsule.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
+  projectId: "c8e6dfa",
   storageBucket: "YOUR_PROJECT.appspot.com",
   messagingSenderId: "YOUR_SENDER_ID",
   appId: "YOUR_APP_ID"
@@ -14,4 +14,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+
 
