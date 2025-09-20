@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Capsule</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+</head>
+<body>
+
+  <h1>📦 Future Capsule</h1>
+
+  <div id="auth-section">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="userPassword" placeholder="Password" />
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="logIn()">Log In</button>
+    <button onclick="logOut()">Log Out</button>
+    <p id="authStatus"></p>
+  </div>
+
+  <div id="capsule-section">
+    <input type="text" id="capsuleName" placeholder="Capsule Name" />
+    <textarea id="message" placeholder="Your message..."></textarea>
+    <input type="datetime-local" id="unlockDate" />
+    <input type="password" id="capsulePassword" placeholder="Capsule Password" />
+    <input type="file" id="fileUpload" accept="image/*" />
+    <button onclick="saveCapsule()">Save Capsule</button>
+    <button onclick="listCapsules()">View Capsules</button>
+  </div>
+
+  <div id="capsuleList"></div>
+  <div id="output"></div>
+
+  <!-- Modular JS -->
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
